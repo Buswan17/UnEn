@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coming Soon | Unplugged Energi</title>
+  <title>Unplugged Energi</title>
   <style>
     body {
       margin: 0;
@@ -15,56 +15,54 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
     }
 
-    img {
-      width: 800px; /* Adjust logo size here */
+    .logo {
+      max-width: 300px;
+      width: 80%;
       height: auto;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
     }
 
-    .message p {
-      font-size: 2em;
-      margin: 20px 0;
-    }
-
-    .links {
-      font-size: 1.5em;
-      margin-top: 30px;
+    h1, p {
+      font-size: 1.5rem;
+      margin: 10px 20px;
     }
 
     a {
-      color: #1da1f2;
+      color: #00bfff;
       text-decoration: none;
-      font-weight: bold;
+      word-break: break-word;
     }
 
     a:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 600px) {
+      h1, p {
+        font-size: 1.2rem;
+      }
+
+      .logo {
+        max-width: 200px;
+      }
+    }
   </style>
 </head>
 <body>
-  <!-- LOGO -->
-  <img src="Unplugged_Logo.svg" alt="Unplugged Energi Logo" />
+  <img src="Unplugged_Logo.svg" alt="Unplugged Energi Logo" class="logo" />
 
-  <!-- MESSAGE -->
-  <div class="message">
-    <p>Thank you for your visit.</p>
-    <p>We are currently busy in the labs, creating something super exciting that we can’t wait to share soon.</p>
-    <p>Our full site will be live soon!</p>
-  </div>
-
-  <!-- LINKS -->
-  <div class="links">
-    <p>
-      In the meantime, feel free to follow us on<br />
-      <a href="https://www.linkedin.com/company/101589335/admin/dashboard/" target="_blank">LinkedIn</a><br />
-      or reach out to us at<br />
-      <a href="mailto:info@unpluggedenergi.com">info@unpluggedenergi.com</a>.
-    </p>
-  </div>
+  <h1>Thank you for your visit.</h1>
+  <p>We’re currently busy in the labs, creating something super exciting that we can’t wait to share.</p>
+  <p>Our full site will be live soon!</p>
+  <p>
+    In the meantime, feel free to follow us on
+    <a href="https://www.linkedin.com/company/101589335/" target="_blank">LinkedIn</a>
+    or reach out to us at
+    <a href="mailto:info@unpluggedenergi.com">info@unpluggedenergi.com</a>.
+  </p>
 </body>
 </html>
